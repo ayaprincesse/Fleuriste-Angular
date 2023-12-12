@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="card shadow mb-4">
+    <div class="card-body">
+      <h5>Flowers</h5>
+      <table class="table table-striped">
+          <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+          <tbody *ngFor="let flower of flowers">
+          <tr>
+            <td>{{ flower.flowerId }}</td>
+            <td>{{ flower.flowerName }}</td>
+            <td>{{ flower.flowerquantity }}</td>
+            <td>{{ flower.flowerprice }}</td>
+            <td><a class="btn btn-danger" (click)="deleteFlower(flower)">DELETE</a></td>
+            <td><a class="btn btn-success" [routerLink]="['/editflower',flower.flowerId]">EDIT</a></td>
+          </tr>
+          </tbody>
+        </table>
+
+    </div>
+  </div>
+</div>

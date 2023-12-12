@@ -1,0 +1,48 @@
+<div class="container">
+    <div>
+        <h2>Add Flower</h2>
+    </div>
+    <form>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+            <label>Flower Id</label>
+            <input
+                    type="number"
+                    [(ngModel)]="newFlower.flowerId"
+                    name="flowerId"
+                    class="form-control"
+            />
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label>Flower Name</label>
+            <input
+                    type="text"
+                    [(ngModel)]="newFlower.flowerName"
+                    name="flowerName"
+                    class="form-control"
+            />
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label>Flower Quantity</label>
+            <input
+                    type="number"
+                    [(ngModel)]="newFlower.flowerquantity"
+                    name="flowerquantity"
+                    class="form-control"
+            />
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label>Flower Price</label>
+            <input
+                    type="number"
+                    [(ngModel)]="newFlower.flowerprice"
+                    name="flowerprice"
+                    class="form-control"
+            />
+        </div>
+        <div class="mt-2">
+            <button type="submit" (click)="addFlower()" class="btn btn-success">
+                ADD
+            </button>
+        </div>
+    </form>
+</div>
