@@ -1,0 +1,71 @@
+<div class="container">
+  <form (ngSubmit)="submitForm()">
+    <!-- Section 1 -->
+    <div *ngIf="currentSection === 1">
+      <h2 style="margin-bottom: 30px;">First : Add flowers to your bouquet</h2>
+
+      <div class="row">
+        <div class="col-md-4" *ngFor="let f of flowers">
+          <div class="card mb-4">
+            <img src="{{f.flowerImage}}" class="card-img-top" style="height:50vh" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">{{ f.flowerName }}</h5>
+              <p class="card-text">Quantité en Stock : {{ f.flowerquantity }}</p>
+              <p class="card-text"><strong>Prix: {{ f.flowerprice }}MAD</strong></p>
+              <button type="button" class="btn pretty-button sagegreen-button" (click)="addflower(f)">ADD</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-outline-secondary" (click)="nextSection()">Next >></button>
+    </div>
+
+    <!-- Section 2 -->
+    <div *ngIf="currentSection === 2">
+      <h2 style="margin-bottom: 30px;">Second : Choose your bouquet type</h2>
+
+      <div class="row">
+        <div class="col-md-4" *ngFor="let bt of bouquettypes">
+          <div class="card mb-4">
+            <img src="{{bt.bouquettypeImage}}" class="card-img-top" style="height:60vh" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">{{ bt.bouquettypeName }}</h5>
+              <button type="button" class="btn pretty-button sagegreen-button" (click)="addtype(bt)">Choose</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-secondary" (click)="prevSection()">Back</button>
+      <button type="button" class="btn btn-outline-secondary" (click)="nextSection()">Next</button>
+    </div>
+
+    <!-- Section 3 -->
+    <div *ngIf="currentSection === 3">
+      <h2>Lastly : Choose name for your customised bouquet </h2>
+      <div class="form-group">
+        <h4>this step makes it easy to look for your bouquet later</h4>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4">
+        <input
+          [(ngModel)]="newBouquet.bouquetName"
+          name="bouquetName"
+          class="form-control"
+        />
+      </div>
+      <button type="button" class="btn btn-secondary" (click)="prevSection()">Back</button>
+      <button type="button" class="btn btn-outline-secondary" (click)="nextSection()">Next</button>
+    </div>
+
+    <!-- Section 3 -->
+    <div *ngIf="currentSection === 4">
+      <h2>MIDJOURNEY STABLE DIFFUSION </h2>
+      <div class="form-group">
+        <h4>Generating ... </h4>
+      </div>
+      <button type="button" class="btn btn-secondary" (click)="prevSection()">Back</button>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+  </form>
+</div>

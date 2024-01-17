@@ -1,0 +1,22 @@
+.c{
+  overflow: hidden;
+  position: relative;
+}
+.demo-bg {
+  opacity: 0.8;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.btn-primary {
+  background-color: lightpink;
+  border: none;
+  color: #5A5A5A;
+}
+
+.btn-primary:hover {
+  background-color: hotpink;
+}

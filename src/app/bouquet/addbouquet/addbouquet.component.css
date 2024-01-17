@@ -1,0 +1,15 @@
+.form-section {
+  display: none;
+}
+
+.form-section.active {
+  display: block;
+}
+
+.sagegreen-button{
+  background-color: lightgreen; /* Pink background color */
+}
+
+.sagegreen-button:hover{
+  background-color: darkseagreen; /* Pink background color */
+}

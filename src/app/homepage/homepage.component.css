@@ -1,0 +1,50 @@
+body, html {
+  background-image: url("../../assets/imgs/img.png"); /* Replace with your actual image URL */
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-container {
+  color: #fff;
+  text-align: center;
+  padding: 300px ;
+  margin-bottom: 150px;
+}
+
+.hero-text {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.pretty-button {
+  border: none; /* Remove border */
+  padding: 12px 20px; /* Adjust padding as needed */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 23px;
+  cursor: pointer;
+  border-radius: 20px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth color transition on hover */
+  margin: 20px;
+  color: #1c1b1b; /* White text color */
+  text-shadow: none;
+}
+
+.sagegreen-button{
+  background-color: lightgreen; /* Pink background color */
+}
+
+.sagegreen-button:hover{
+  background-color: darkseagreen; /* Pink background color */
+}
+
+.white-button{
+  background-color: #ffff; /* white background color */
+}
+
+.white-button:hover{
+  background-color: palevioletred; /* Darker pink color on hover */
+}
+

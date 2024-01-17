@@ -1,0 +1,39 @@
+<div class="c d-flex justify-content-center align-items-center vh-100">
+  <img
+    class="demo-bg"
+    src="../../../assets/imgs/img.png"
+    alt=""
+  >
+  <div class="card p-4">
+    <div class="text-center">
+      <h3>Signup</h3>
+    </div>
+    <div class="card-body">
+      <form>
+        <div class="mb-4">
+          <label for="fullName" class="form-label">Full Name:</label>
+          <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" [(ngModel)]="fullName" name="fullName" required>
+        </div>
+        <div class="mb-4">
+          <label for="phoneNumber" class="form-label">Phone Number:</label>
+          <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number" [(ngModel)]="phoneNumber" name="phoneNumber" required>
+        </div>
+        <div class="mb-4">
+          <label for="signupUsername" class="form-label">Username:</label>
+          <input type="text" class="form-control" id="signupUsername" placeholder="Choose a username" [(ngModel)]="signupUsername" name="signupUsername" required>
+        </div>
+        <div class="mb-4">
+          <label for="signupPassword" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="signupPassword" placeholder="Choose a password" [(ngModel)]="signupPassword" name="signupPassword" required>
+        </div>
+        <div class="form-check mb-4">
+          <input type="checkbox" class="form-check-input" id="acceptTerms" [(ngModel)]="acceptTerms" name="acceptTerms" required>
+          <label class="form-check-label" for="acceptTerms">I accept the terms and rights</label>
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary" (click)="signup()">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

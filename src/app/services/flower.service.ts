@@ -11,9 +11,9 @@ export class FlowerService {
   console=console;
   constructor(){
     this.flowers = [
-      {flowerId : 1, flowerName : "tulip", flowerquantity: 50, flowerprice:12.00},
-      {flowerId : 2, flowerName : "rose", flowerquantity : 100, flowerprice:8.00},
-      {flowerId : 3, flowerName : "sunflower", flowerquantity: 30, flowerprice:11.00}
+      {flowerId : 1, flowerName : "tulip", flowerquantity: 50, flowerprice:12.00, flowerImage:"assets/imgs/tulip.png"},
+      {flowerId : 2, flowerName : "chrysanthemum", flowerquantity : 100, flowerprice:8.00 , flowerImage:"assets/imgs/chryss.png"},
+      {flowerId : 3, flowerName : "sunflower", flowerquantity: 30, flowerprice:11.00 , flowerImage:"assets/imgs/sunflower.png"}
     ];
       console.log("constructor");
   }

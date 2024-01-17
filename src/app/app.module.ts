@@ -7,7 +7,12 @@ import { FlowerlistComponent } from './flower/flowerlist/flowerlist.component';
 import { AddflowerComponent } from './flower/addflower/addflower.component';
 import {FormsModule} from "@angular/forms";
 import { EditflowerComponent } from './flower/editflower/editflower.component';
-import { BouquetlistComponent } from './bouquetlist/bouquetlist.component';
+import { BouquetlistComponent } from './bouquet/bouquetlist/bouquetlist.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { AddbouquetComponent } from './bouquet/addbouquet/addbouquet.component';
+import { LoginComponent } from './Log/login/login.component';
+import { SignupComponent } from './Log/signup/signup.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -15,12 +20,17 @@ import { BouquetlistComponent } from './bouquetlist/bouquetlist.component';
     FlowerlistComponent,
     AddflowerComponent,
     EditflowerComponent,
-    BouquetlistComponent
+    BouquetlistComponent,
+    HomepageComponent,
+    AddbouquetComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
